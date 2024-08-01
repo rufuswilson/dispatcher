@@ -5,8 +5,9 @@ Changes
 ---------
 
 * Removed caching.
-* Removed logging
-* Formatted docstrings
+* Removed logging.
+* Formatted docstrings.
+* Added type stub.
 
 
 Last pulled
