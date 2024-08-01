@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(
-    name="pydispatcher",
+    name="dispatcher",
     maintainer="marsou75",
     maintainer_email="marsou75@gmail.com",
     description="A library for event-driven programming, extracted from Django",
