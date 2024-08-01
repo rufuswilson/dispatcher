@@ -9,7 +9,7 @@ setup(
         "dispatcher",
     ],
     version="1.0.0",
-    url="https://github.com/xiachufang/dispatcher",
+    url="https://github.com/rufuswilson/dispatcher",
     install_requires=["asgiref"],
     classifiers=[
         "Development Status :: 4 - Beta",
