@@ -4,7 +4,9 @@ from typing import Any, Literal, TypeVar
 _F = TypeVar("_F", bound=Callable[..., Any])
 
 class Signal:
-    def __init__(self) -> None: ...
+    use_caching: bool
+
+    def __init__(self, use_caching: bool = ...) -> None: ...
     def connect(
         self,
         receiver: _F,
@@ -24,24 +26,24 @@ class Signal:
     ) -> bool: ...
     def send(
         self,
-        sender: Any,
+        sender: Any = ...,
         **named: Any,
-    ) -> list[tuple[_F, str | None]]: ...
+    ) -> list[tuple[_F, Any]]: ...
     async def asend(
         self,
-        sender: Any,
+        sender: Any = ...,
         **named: Any,
-    ) -> list[tuple[_F, str | None]]: ...
+    ) -> list[tuple[_F, Any]]: ...
     def send_robust(
         self,
-        sender: Any,
+        sender: Any = ...,
         **named: Any,
-    ) -> list[tuple[_F, Exception | Any]]: ...
+    ) -> list[tuple[_F, Any]]: ...
     async def asend_robust(
         self,
-        sender: Any,
+        sender: Any = ...,
         **named: Any,
-    ) -> list[tuple[_F, Exception | Any]]: ...
+    ) -> list[tuple[_F, Any]]: ...
 
 def receiver(
     signal: list[Signal] | tuple[Signal, ...] | Signal,
