@@ -31,8 +31,13 @@ If a sender cannot safely be used as a cache key, signal delivery still works;
 the library looks up its receivers each time instead.
 
 
-Last pulled
--------------
-https://github.com/django/django/blob/main/django/dispatch/dispatcher.py
-Last commit: ba4751e
-Date commit: 17/03/2026
+Upstream provenance
+-------------------
+The implementation was last synchronized on 17 March 2026 from
+[Django's dispatcher module](https://github.com/django/django/blob/ba4751e0ca558dd8f0d9e6153bec4280289ca2f4/django/dispatch/dispatcher.py),
+at commit `ba4751e0ca558dd8f0d9e6153bec4280289ca2f4` (authored 23 February
+2026).
+
+The project is distributed under the BSD 3-Clause License. See
+[LICENSE](LICENSE) and [dispatcher/license.txt](dispatcher/license.txt) for the
+Django and original PyDispatcher notices.

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dispatcher"
+version = "1.1.1"
+description = "A library for event-driven programming, extracted from Django"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "BSD-3-Clause"
+license-files = [
+    "LICENSE",
+    "dispatcher/license.txt",
+]
+maintainers = [
+    { name = "Rufus Wilson", email = "marsou75@gmail.com" },
+]
+dependencies = [
+    "asgiref",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/rufuswilson/dispatcher"
+Source = "https://github.com/rufuswilson/dispatcher"
+
+[tool.setuptools]
+packages = ["dispatcher"]
+
+[tool.setuptools.package-data]
+dispatcher = [
+    "dispatcher.pyi",
+    "py.typed",
+    "license.txt",
+]
